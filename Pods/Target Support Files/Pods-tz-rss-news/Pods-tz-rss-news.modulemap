@@ -1,0 +1,6 @@
+framework module Pods_tz_rss_news {
+  umbrella header "Pods-tz-rss-news-umbrella.h"
+
+  export *
+  module * { export * }
+}
