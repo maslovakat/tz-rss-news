@@ -16,6 +16,10 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        rssSearchBar.text = ""
+    }
+    
     @IBAction func searchPressed(_ sender: UIButton) {
         if let url = rssSearchBar.text {
             self.performSegue(withIdentifier: "newsTableSegue", sender: url)
